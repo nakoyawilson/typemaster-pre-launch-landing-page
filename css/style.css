@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
+
+:root {
+  --font: "Barlow", sans-serif;
+  --orange: hsl(22, 88%, 52%);
+  --medium-orange: hsl(22, 100%, 69%);
+  --black: hsl(220, 50%, 17%);
+  --dark-grey: hsl(221, 23%, 58%);
+  --light-grey: hsl(198, 28%, 93%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--dark-grey);
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: calc(26rem / 16);
+}
+
+/* Typography */
+h1,
+h2 {
+  font-weight: 900;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: calc(48rem / 16);
+  line-height: calc(48rem / 16);
+}
+
+.about-heading {
+  font-size: calc(32rem / 16);
+  line-height: calc(36rem / 16);
+  width: min(100%, 255px);
+  margin: 0 auto;
+}
+
+.feature-heading {
+  font-size: calc(24rem / 16);
+  line-height: calc(28rem / 16);
+  margin-top: calc(48rem / 16);
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.intro .bold-text {
+  text-transform: uppercase;
+}
+
+/* Layout */
+
+/* Shared Styles */
+
+.container {
+  width: min(87.2%, 327px);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-dark {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background: var(--medium-orange);
+}
+
+.btn-light {
+  background: var(--light-grey);
+  color: var(--black);
+}
+
+.btn-light:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.about,
+.features,
+footer {
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
+/* Header */
+
+header {
+  padding: 23px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.logo {
+  width: 40px;
+}
+
+/* Main */
+
+main {
+  padding: 41px 0 46px;
+}
+
+.intro .paragraph,
+.intro .btn {
+  margin-top: calc(32rem / 16);
+}
+
+.intro .btn {
+  margin-right: calc(32rem / 16);
+}
+
+.intro-img,
+.image {
+  width: 100%;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.about {
+  padding: 64px 0;
+}
+
+.about .paragraph,
+.features .paragraph {
+  margin-top: calc(24rem / 16);
+}
+
+.features {
+  padding-top: 47px;
+}
+
+.features .container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.icon-wrapper {
+  width: 65px;
+  height: 65px;
+  border-radius: 16px;
+  margin-inline: auto;
+  background: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+
+footer {
+  padding: 50px 0;
+}
